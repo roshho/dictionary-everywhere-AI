@@ -1,0 +1,23 @@
+{
+    "name": "Popup ChatGPT",
+    "version": "1.0.0",
+    "description": "Highlight word/phrase. Double click. Output: short chatGPT popup explanation",
+    "manifest_version": 3,
+    "permissions": ["history", "storage"],
+
+    "background": {
+        "service_worker": "js/clear_history.js"
+    },
+
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+    "icons": {
+        "48": "images/icon_48.png",
+        "96": "images/icon_96.png"
+    },
+    "action": {
+        "default_icon": "images/icon_96.png"
+    }
+}
